@@ -9,7 +9,7 @@ const Header = () => {
   const [fetchedData, setFetchedData] = useState<any>([]);
   const [search, setSearch] = useState("udupi");
   const [nav, setNav] = useState(false);
-  const [mobileSearch, setMobileSearch] = useState(false);
+
   const navigate = useNavigate();
 
   const searchData = JSON.parse(localStorage.getItem("search") || "[]");
@@ -71,7 +71,6 @@ const Header = () => {
         }
       }
     } else {
-      alert("enter search term");
     }
   };
 
