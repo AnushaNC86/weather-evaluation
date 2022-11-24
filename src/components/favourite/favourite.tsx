@@ -36,7 +36,6 @@ const Favourite = () => {
 
   let icon = "";
   const removeItem = (location: any) => {
-    console.log("abvcxz", location.location.woeid);
     const favourites = JSON.parse(localStorage.getItem("fav") || "[]");
     console.log("woeid", favourites);
     let remId = -1;

@@ -25,7 +25,8 @@ const Header = () => {
     setSearch(searchItem);
   }, []);
 
-  const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${search}&format=json&u=f`;
+  const searchSecond = "udupi";
+  const url = `https://yahoo-weather5.p.rapidapi.com/weather?location=${search}||${searchSecond}&format=json&u=f`;
 
   const options = {
     method: "GET",
@@ -58,8 +59,7 @@ const Header = () => {
           arr.push("exists");
         }
       });
-      console.log("arr", arr);
-      console.log("asasas", searchData.message);
+
       if (arr.includes("exists")) {
         //alert("already exists");
       } else {

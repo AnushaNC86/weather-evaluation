@@ -1,15 +1,12 @@
 import "./tabsHead.css";
-
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import HomeTab from "../homeDetails/homeDetails";
 import Favourite from "../favourite/favourite";
-import Recent from "../recentSearch/recentSearch";
+import RecentSearch from "../recent/recentSearch";
 import { Route, Routes, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const TabsHeader = () => {
-  const [value, onChange] = useState("");
   const [date, setDate] = useState<any>(new Date());
 
   const today = () => {
@@ -66,7 +63,7 @@ const TabsHeader = () => {
       <Routes>
         <Route path="/" element={<HomeTab date={date} />} />
         <Route path="/fav" element={<Favourite />} />{" "}
-        <Route path="/recent" element={<Recent />} />
+        <Route path="/recent" element={<RecentSearch />} />
       </Routes>
     </div>
   );

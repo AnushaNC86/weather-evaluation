@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { showModal } from "../../redux/modalSlice";
 import { weather } from "../../redux/weatherSlice";
 
-const Recent = () => {
+const RecentSearch = () => {
   const [dialog, setDialog] = useState(false);
   const [fetchedData, setFetchedData] = useState<any>([]);
   const [search, setSearch] = useState("");
@@ -266,4 +266,4 @@ const Recent = () => {
   );
 };
 
-export default Recent;
+export default RecentSearch;

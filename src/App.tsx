@@ -1,7 +1,7 @@
 import Home from "./views/home/home";
 import "./style.css";
 import { Route, Routes } from "react-router-dom";
-import Recent from "./components/recentSearch/recentSearch";
+
 import Favourite from "./components/favourite/favourite";
 
 function App() {
